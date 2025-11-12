@@ -10,6 +10,7 @@
 		C73E0AA32EC41B6000898AE8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C73E0AA22EC41B6000898AE8 /* README.md */; };
 		C790E0762EC4158C00A38F48 /* ColorSlider in Frameworks */ = {isa = PBXBuildFile; productRef = C790E0752EC4158C00A38F48 /* ColorSlider */; };
 		C790E0782EC4160800A38F48 /* ColorSlider in Frameworks */ = {isa = PBXBuildFile; productRef = C790E0772EC4160800A38F48 /* ColorSlider */; };
+		C7EBECE02EC4248900DE2CFA /* ColorSlider in Frameworks */ = {isa = PBXBuildFile; productRef = C7EBECDF2EC4248900DE2CFA /* ColorSlider */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 			files = (
 				C790E0762EC4158C00A38F48 /* ColorSlider in Frameworks */,
 				C790E0782EC4160800A38F48 /* ColorSlider in Frameworks */,
+				C7EBECE02EC4248900DE2CFA /* ColorSlider in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +79,7 @@
 			packageProductDependencies = (
 				C790E0752EC4158C00A38F48 /* ColorSlider */,
 				C790E0772EC4160800A38F48 /* ColorSlider */,
+				C7EBECDF2EC4248900DE2CFA /* ColorSlider */,
 			);
 			productName = ColorSliderDemo;
 			productReference = C790E0662EC4149100A38F48 /* ColorSliderDemo.app */;
@@ -107,7 +110,7 @@
 			mainGroup = C790E05D2EC4149100A38F48;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				C790E0742EC4158C00A38F48 /* XCLocalSwiftPackageReference "../ColorSlider" */,
+				C7EBECDE2EC4248900DE2CFA /* XCRemoteSwiftPackageReference "ColorSlider" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = C790E0672EC4149100A38F48 /* Products */;
@@ -353,12 +356,16 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCLocalSwiftPackageReference section */
-		C790E0742EC4158C00A38F48 /* XCLocalSwiftPackageReference "../ColorSlider" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ../ColorSlider;
+/* Begin XCRemoteSwiftPackageReference section */
+		C7EBECDE2EC4248900DE2CFA /* XCRemoteSwiftPackageReference "ColorSlider" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/workingDog/ColorSlider";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
 		};
-/* End XCLocalSwiftPackageReference section */
+/* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
 		C790E0752EC4158C00A38F48 /* ColorSlider */ = {
@@ -367,6 +374,11 @@
 		};
 		C790E0772EC4160800A38F48 /* ColorSlider */ = {
 			isa = XCSwiftPackageProductDependency;
+			productName = ColorSlider;
+		};
+		C7EBECDF2EC4248900DE2CFA /* ColorSlider */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C7EBECDE2EC4248900DE2CFA /* XCRemoteSwiftPackageReference "ColorSlider" */;
 			productName = ColorSlider;
 		};
 /* End XCSwiftPackageProductDependency section */

@@ -1,0 +1,15 @@
+{
+  "originHash" : "4042ebf47482ba714bb2b5fa419a6103f096929521aff61c9b364b4a17b2b35d",
+  "pins" : [
+    {
+      "identity" : "colorslider",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/workingDog/ColorSlider",
+      "state" : {
+        "branch" : "main",
+        "revision" : "9c1ea23876a97ec0330aaf438d29850e54b8f2b0"
+      }
+    }
+  ],
+  "version" : 3
+}

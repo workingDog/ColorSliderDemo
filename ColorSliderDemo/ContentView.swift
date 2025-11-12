@@ -15,7 +15,8 @@ struct ContentView: View {
     var body: some View {
         @Bindable var colorModel = colorModel
         ZStack {
-            colorModel.gradient.ignoresSafeArea()
+          //  colorModel.gradient.ignoresSafeArea()
+            colorModel.color.opacity(colorModel.opacity).ignoresSafeArea()
             
             VStack(spacing: 20) {
                 Text("\(colorModel.value)")
