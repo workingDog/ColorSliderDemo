@@ -9,7 +9,7 @@ import ColorSlider
 
 @main
 struct ColorSliderDemoApp: App {
-    @State var colorModel = ColorModel()
+    @State private var colorModel = ColorModel()
     
     var body: some Scene {
         WindowGroup {
