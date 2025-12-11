@@ -37,9 +37,6 @@ struct ContentView: View {
                     .background(colorModel.colorGradient) // <--- important
                     .clipShape(RoundedRectangle(cornerRadius: 20))
                     .overlay(RoundedRectangle(cornerRadius: 20).stroke(lineWidth: 1).foregroundColor(.black))
-                    .onChange(of: colorModel.value) {
-                        colorModel.updatePalette()
-                    }
                 
                 // opacity Slider
                 Slider(value: $colorModel.opacity, in: 0...1)
@@ -55,9 +52,6 @@ struct ContentView: View {
             .padding(.top, 30)
             .padding(.horizontal)
             .environment(colorModel)
-        }
-        .onChange(of: colorModel.grayScale) {
-            colorModel.updatePalette()
         }
         .onAppear {
             colorModel.retrieveSettings()
