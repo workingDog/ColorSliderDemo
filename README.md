@@ -2,4 +2,4 @@
 
 A demo App using the [ColorSlider](https://github.com/workingDog/ColorSlider) package.
 
- [im01](picture1.png)
+ ![im01](picture1.png)
