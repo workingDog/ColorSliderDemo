@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C73E0AA32EC41B6000898AE8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C73E0AA22EC41B6000898AE8 /* README.md */; };
 		C76DE1AD2EEA6CAE003AEFCC /* ColorSlider in Frameworks */ = {isa = PBXBuildFile; productRef = C76DE1AC2EEA6CAE003AEFCC /* ColorSlider */; };
+		C7794DEB2EEA839A00981678 /* picture1.png in Resources */ = {isa = PBXBuildFile; fileRef = C7794DEA2EEA839A00981678 /* picture1.png */; };
 		C790E0762EC4158C00A38F48 /* ColorSlider in Frameworks */ = {isa = PBXBuildFile; productRef = C790E0752EC4158C00A38F48 /* ColorSlider */; };
 		C790E0782EC4160800A38F48 /* ColorSlider in Frameworks */ = {isa = PBXBuildFile; productRef = C790E0772EC4160800A38F48 /* ColorSlider */; };
 		C7A7A3AE2EEA825C00A343C2 /* ColorSlider in Frameworks */ = {isa = PBXBuildFile; productRef = C7A7A3AD2EEA825C00A343C2 /* ColorSlider */; };
@@ -16,6 +17,7 @@
 
 /* Begin PBXFileReference section */
 		C73E0AA22EC41B6000898AE8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C7794DEA2EEA839A00981678 /* picture1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = picture1.png; sourceTree = "<group>"; };
 		C790E0662EC4149100A38F48 /* ColorSliderDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorSliderDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -46,6 +48,7 @@
 			isa = PBXGroup;
 			children = (
 				C73E0AA22EC41B6000898AE8 /* README.md */,
+				C7794DEA2EEA839A00981678 /* picture1.png */,
 				C790E0682EC4149100A38F48 /* ColorSliderDemo */,
 				C790E0672EC4149100A38F48 /* Products */,
 			);
@@ -130,6 +133,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7794DEB2EEA839A00981678 /* picture1.png in Resources */,
 				C73E0AA32EC41B6000898AE8 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
