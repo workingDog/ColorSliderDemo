@@ -32,7 +32,7 @@ struct ContentView: View {
                 }
                 
                 // the color Slider
-                Slider(value: $colorModel.value, in: colorModel.colorRange, step: 1)
+                Slider(value: $colorModel.value, in: colorModel.colorRange, step: Double(colorModel.bandSize))
                     .frame(width: 333, height: 33) // before the background
                     .background(colorModel.colorGradient) // <--- important
                     .clipShape(RoundedRectangle(cornerRadius: 20))
@@ -60,10 +60,11 @@ struct ContentView: View {
             colorModel.updatePalette()
         }
         .onAppear {
-            // example of using the bandSize to modify the thickness of the color bands
-         //   colorModel.nColors = 10
-         //   colorModel.bandSize = 10
             colorModel.retrieveSettings()
+            
+            // bandSize and nColors, to modify the thickness of the color bands
+//            colorModel.nColors = 10
+//            colorModel.bandSize = 10
         }
     }
 }
