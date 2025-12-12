@@ -18,6 +18,7 @@ struct ContentView: View {
             // the view background
             colorModel.color.opacity(colorModel.opacity).ignoresSafeArea()
  
+            // color description
             VStack(spacing: 20) {
                 Text("\(colorModel.value)")
                 Text(String(colorModel.color.description))
@@ -32,11 +33,7 @@ struct ContentView: View {
                 }
                 
                 // the color Slider
-                Slider(value: $colorModel.value, in: colorModel.colorRange, step: Double(colorModel.bandSize))
-                    .frame(width: 333, height: 33) // before the background
-                    .background(colorModel.colorGradient) // <--- important
-                    .clipShape(RoundedRectangle(cornerRadius: 20))
-                    .overlay(RoundedRectangle(cornerRadius: 20).stroke(lineWidth: 1).foregroundColor(.black))
+                ColorSlider()
                 
                 // opacity Slider
                 Slider(value: $colorModel.opacity, in: 0...1)
